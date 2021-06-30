@@ -17,10 +17,9 @@ const Login = (props) => {
       setFormIsValid(
         enteredEmail.includes("@") && enteredPassword.trim().length > 6
       );
-    }, 1000);
+    }, 500);
 
     return () => {
-      console.log("CLEANUP");
       clearTimeout(identifier);
     };
   }, [enteredEmail, enteredPassword]);
