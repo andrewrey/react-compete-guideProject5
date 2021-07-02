@@ -87,9 +87,8 @@ const Login = (props) => {
     <Card className={classes.login}>
       <form onSubmit={submitHandler}>
         <Input
-          htmlFor="email"
           label="E-mail"
-          isValid={emailState.isValid}
+          isValid={emailIsValid}
           type="email"
           id="email"
           value={emailState.value}
@@ -97,9 +96,8 @@ const Login = (props) => {
           onBlur={validateEmailHandler}
         />
         <Input
-          htmlFor="password"
           label="Password"
-          isValid={passwordState.isValid}
+          isValid={passwordIsValid}
           type="password"
           id="password"
           value={passwordState.value}
