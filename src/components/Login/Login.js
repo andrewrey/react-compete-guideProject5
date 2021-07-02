@@ -50,9 +50,7 @@ const Login = (props) => {
   const { isValid: passwordIsValid } = passwordState;
 
   useEffect(() => {
-    console.log("effect Running");
     const identifier = setTimeout(() => {
-      console.log(passwordIsValid);
       setFormIsValid(emailIsValid && passwordIsValid);
     }, 500);
 
